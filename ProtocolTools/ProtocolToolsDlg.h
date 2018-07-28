@@ -3,7 +3,7 @@
 //
 
 #pragma once
-
+#include "SocketTool.h"
 
 // CProtocolToolsDlg 对话框
 class CProtocolToolsDlg : public CDialogEx
@@ -18,7 +18,8 @@ public:
 	protected:
 	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV 支持
 
-
+public:
+	SocketTool m_varSocketTool;
 // 实现
 protected:
 	HICON m_hIcon;
